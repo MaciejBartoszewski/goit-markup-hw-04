@@ -17,6 +17,7 @@ a {
   --dark-color: #212121;
   --gray-color: #757575;
   --lorem-color: #f5f4fa;
+  --light-gray-color: #afb1b8;
   --family: 'Raleway';
   --roboto: 'Roboto';
 }
@@ -179,6 +180,13 @@ header {
   border-bottom: 1px solid #eeeeee;
   flex-basis: calc((100 - 2 * 30px) / 3);
 }
+.projects:hover,
+.projects:focus,
+.projects:active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
 .project-name {
   flex-direction: column;
   row-gap: 4px;
@@ -186,8 +194,12 @@ header {
   padding-left: 24px;
 }
 .main-page {
-  background: #2f303a;
+  background-color: #2f303a;
   text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.6)),
+    url('./../images/img-overlay.jpg');
+  max-width: 1600px;
+  margin: auto;
 }
 .button-theme {
   background: var(--blue-color);
@@ -214,8 +226,10 @@ header {
   padding-top: 10px;
 }
 .lorem-icon {
+  all: unset;
   background-color: var(--lorem-color);
   border-radius: 4px;
+  padding: 25px 100px;
 }
 .lorem {
   font-weight: 700;
@@ -255,7 +269,7 @@ header {
 }
 .employees {
   max-width: 270px;
-  height: 368px;
+  height: 428px;
   background: var(--white-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0 2px 1px rgba(0, 0, 0, 0.2);
@@ -275,6 +289,37 @@ header {
 .name-card {
   padding-top: 30px;
   text-align: center;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-inline: 32px;
+  margin-bottom: 30px;
+  padding-top: 16px;
+}
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--blue-color);
+  fill: var(--white-color);
+}
+a.social-item:hover svg,
+a.social-item:focus svg {
+  fill: var(--white-color);
+}
+.social-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: var(--light-gray-color);
 }
 .list-icons {
   display: flex;
