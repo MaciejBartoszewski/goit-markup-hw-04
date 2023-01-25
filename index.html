@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/modern-normalize.min.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -34,8 +35,22 @@
           </ul>
         </nav>
         <ul class="menu-contacts">
-          <li><a class="contacts" href="mail:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="contacts" href="tel:+48111111111">+48 111 111 111</a></li>
+          <li>
+            <a class="contacts" href="mail:info@devstudio.com">
+              <svg class="menu-icons" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contacts" href="tel:+48111111111">
+              <svg class="menu-icons" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -51,10 +66,13 @@
         </div>
       </section>
       <!--lorem ipsum-->
-      <section class="section">
+      <section class="section section-lorem">
         <div class="container">
           <ul class="card-set">
             <li class="item">
+              <svg class="lorem-icon">
+                <use href="./images/icons.svg#icon-antenna-1" width="70" height="70"></use>
+              </svg>
               <h3 class="lorem">lorem ipsum</h3>
               <p class="ipsum">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -138,21 +156,85 @@
           </ul>
         </div>
       </section>
+      <section class="section">
+        <div class="container">
+          <h2>Nasi klienci</h2>
+          <ul class="list-icons">
+            <li>
+              <svg class="logo-icon">
+                <use href="./images/icons.svg#icon-Logo" width="106" height="60.04"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="logo-icon">
+                <use href="./images/icons.svg#icon-Logo-1" width="106" height="60.04"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="logo-icon">
+                <use href="./images/icons.svg#icon-Logo-2" width="106" height="60.04"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="logo-icon">
+                <use href="./images/icons.svg#icon-Logo-3" width="106" height="60.04"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="logo-icon">
+                <use href="./images/icons.svg#icon-Logo-4" width="106" height="60.04"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="logo-icon">
+                <use href="./images/icons.svg#icon-Logo-5" width="106" height="60.04"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer>
-      <div class="container">
-        <a class="webstudio2"><span class="web">Web</span>Studio</a>
-        <address>
-          <ul class="menu-address">
-            <li>
-              <a class="address" href="https://goo.gl/maps/8ssBXB5K36Uk4STv6" target="_blank">
-                m. Warszawa, Aleje Jerozolimskie 21
-              </a>
+      <div class="container footer">
+        <div>
+          <a class="webstudio2"><span class="web">Web</span>Studio</a>
+          <address>
+            <ul class="menu-address">
+              <li>
+                <a class="address" href="https://goo.gl/maps/8ssBXB5K36Uk4STv6" target="_blank">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </a>
+              </li>
+              <li><a class="phone" href="mailto:info@example.com">info@example.com</a></li>
+              <li><a class="phone" href="tel:+48111111111">+48 111 111 111</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-us">
+          <h3 class="h3-style">DOŁĄCZ DO NAS</h3>
+          <ul class="social-icons">
+            <li class="social-icons-parent">
+              <svg class="social-icons-child">
+                <use href="./Images/icons.svg#icon-instagram-2"></use>
+              </svg>
             </li>
-            <li><a class="phone" href="mailto:info@example.com">info@example.com</a></li>
-            <li><a class="phone" href="tel:+48111111111">+48 111 111 111</a></li>
+            <li class="social-icons-parent">
+              <svg class="social-icons-child">
+                <use href="./Images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </li>
+            <li class="social-icons-parent">
+              <svg class="social-icons-child">
+                <use href="./Images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </li>
+            <li class="social-icons-parent">
+              <svg class="social-icons-child">
+                <use href="./Images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
